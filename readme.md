@@ -1,4 +1,4 @@
-# 🛍️ Loja Midas Touch  
+# 🛍️ Loja Aviv Brand  
 
 Projeto referente à **AC2 - Web Design** da **FACENS**.  
 
@@ -23,3 +23,4 @@ Projeto desenvolvido por alunos da **FACENS** para avaliação na disciplina de 
 
 ---
 📌 *Projeto acadêmico sem fins comerciais.*  
+
