@@ -1,0 +1,12 @@
+.carousel-inner img {
+  height: 400px;   /* altura fixa */
+  object-fit: cover; /* mantém proporção e corta excesso */
+}
+.hover-img {
+  transition: 0.3s ease; /* animação suave */
+  cursor: pointer;
+}
+
+.hover-img:hover {
+  content: url("./assets/camisa2.webp");
+}
