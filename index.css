@@ -1,5 +1,5 @@
 .carousel-inner img {
-  height: 400px;   /* altura fixa */
+  height: 600px;   /* altura fixa */
   object-fit: cover; /* mantém proporção e corta excesso */
 }
 .hover-img {
@@ -7,6 +7,29 @@
   cursor: pointer;
 }
 
+.vendas{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .hover-img:hover {
   content: url("./assets/camisa2.webp");
+}
+
+.card-body h3{
+  text-align: center;
+}
+
+.card a{
+  color: black;
+  text-decoration: none;
+}
+
+.card{
+    transition: transform 0.3s ease; /* animação suave */
+}
+
+.card:hover{
+    transform: scale(1.1); /* aumenta 10% */
 }
