@@ -1,7 +1,7 @@
 const div = document.getElementsByClassName("col-lg-8")[0];
 const resumo = document.getElementsByClassName("resumo")[0];
 
-localStorage.setItem("carrinho", JSON.stringify([ { modelo: "Camisa Polo", tamanho: "G", valor: 79.90, quantidade: 1 }, { modelo: "Camisa Polo", tamanho: "G", valor: 79.90, quantidade: 1 } ]));
+//localStorage.setItem("carrinho", JSON.stringify([ { modelo: "Camisa Polo", tamanho: "G", valor: 79.90, quantidade: 1 }, { modelo: "Camisa Polo", tamanho: "G", valor: 79.90, quantidade: 1 } ]));
 
 let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
@@ -18,15 +18,15 @@ function renderizarCarrinho() {
           </div>
           <div class="col-md-6">
             <div class="card-body">
-              <h5 class="card-title">${carrinho[i].modelo}</h5>
-              <p class="card-text text-muted">Tamanho ${carrinho[i].tamanho}</p>
-              <p class="card-text fw-bold">R$ ${carrinho[i].valor.toFixed(2)}</p>
+              <h5 class="card-title">${carrinho[i].name}</h5>
+              <p class="card-text text-muted">Tamanho ${carrinho[i].size}</p>
+              <p class="card-text fw-bold">R$ ${carrinho[i].price.toFixed(2)}</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
             <div class="d-flex justify-content-center align-items-center">
               <button class="btnMenos btn btn-outline-secondary btn-sm me-2" data-index="${i}">-</button>
-              <span class="quantidade">${carrinho[i].quantidade}</span>
+              <span class="quantidade">${carrinho[i].quantity}</span>
               <button class="btnMais btn btn-outline-secondary btn-sm ms-2" data-index="${i}">+</button>
             </div>
             <button class="btnRemover btn btn-link text-danger mt-2 p-0" data-index="${i}">Remover</button>
@@ -40,7 +40,7 @@ function renderizarCarrinho() {
   document.querySelectorAll(".btnMais").forEach(btn => {
     btn.addEventListener("click", () => {
       const i = btn.dataset.index;
-      carrinho[i].quantidade++;
+      carrinho[i].quantity++;
       localStorage.setItem("carrinho", JSON.stringify(carrinho));
       renderizarCarrinho(); // atualiza carrinho + subtotal
     });
@@ -49,8 +49,8 @@ function renderizarCarrinho() {
   document.querySelectorAll(".btnMenos").forEach(btn => {
     btn.addEventListener("click", () => {
       const i = btn.dataset.index;
-      if (carrinho[i].quantidade > 1) {
-        carrinho[i].quantidade--;
+      if (carrinho[i].quantity > 1) {
+        carrinho[i].quantity--;
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
         renderizarCarrinho();
       }
@@ -67,7 +67,7 @@ function renderizarCarrinho() {
   });
 
   // calcula subtotal
-  const subtotal = carrinho.reduce((acc, item) => acc + item.valor * item.quantidade, 0);
+  const subtotal = carrinho.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   // atualiza resumo
   resumo.innerHTML = `
