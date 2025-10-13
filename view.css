@@ -1,0 +1,15 @@
+.product-view .img-fluid {
+    max-height: 500px;
+    width: 100%;
+    object-fit: contain; /* Garante que a imagem inteira apareça sem distorção */
+    border: 1px solid #eee;
+}
+
+.product-view h1 {
+    font-weight: 700; /* Deixa o título mais forte */
+}
+
+.product-view .btn-lg {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+}
