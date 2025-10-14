@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .hover-img:hover {
@@ -32,4 +33,18 @@
 
 .card:hover{
     transform: scale(1.1); /* aumenta 10% */
+}
+
+.sobre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mapa {
+  display: block;      /* transforma em bloco */
+  margin: 0 auto;      /* centraliza horizontalmente */
+  max-width: 1000px;    /* largura máxima opcional */
 }
