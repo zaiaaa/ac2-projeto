@@ -14,12 +14,12 @@ function renderizarCarrinho() {
       <div class="card mb-3" data-index="${i}">
         <div class="row g-0 align-items-center">
           <div class="col-md-3 text-center">
-            <img src="../assets/camisa.webp" class="img-fluid rounded-start" alt="Produto">
+            <img src="${carrinho[i].image}" class="img-fluid rounded-start" alt="Produto">
           </div>
           <div class="col-md-6">
             <div class="card-body">
               <h5 class="card-title">${carrinho[i].name}</h5>
-              <p class="card-text text-muted">Tamanho ${carrinho[i].size}</p>
+              <p class="card-text text-muted">Tamanho ${carrinho[i].size || "Único"}</p>
               <p class="card-text fw-bold">R$ ${carrinho[i].price.toFixed(2)}</p>
             </div>
           </div>
