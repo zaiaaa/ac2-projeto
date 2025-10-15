@@ -14,9 +14,23 @@
     margin-bottom: 5rem;
 }
 
-.hover-img:hover {
-  content: url("./assets/camisa2.webp");
+.produtos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
 }
+
+.card img{
+  height: 320px;
+  object-fit:cover;
+}
+
+/* .hover-img:hover {
+  content: url("./assets/camisa2.webp");
+} */
 
 .card-body h3{
   text-align: center;
@@ -47,4 +61,5 @@
   display: block;      /* transforma em bloco */
   margin: 0 auto;      /* centraliza horizontalmente */
   max-width: 1000px;    /* largura máxima opcional */
+  margin-bottom: 2rem;
 }
