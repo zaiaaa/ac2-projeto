@@ -74,3 +74,8 @@
   max-width: 1000px;    /* largura máxima opcional */
   margin-bottom: 2rem;
 }
+
+.logo{
+  width: 70px;
+  height: 70px;
+}
