@@ -7,6 +7,17 @@
   cursor: pointer;
 }
 
+.containerFrete{
+  background-color: black;
+  padding: 5px;
+}
+
+.textoFrete{
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
 .vendas{
     flex-wrap: wrap;
     align-items: center;
