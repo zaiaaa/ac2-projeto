@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- FONTES -->
+
+    <title>Aviv Brand - VIVA!</title>
 </head>
+
 <body>
-    
+    <div class="containerFrete">
+        <h1 class="textoFrete">Frete grátis em compras acima de R$299</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="assets/logo-semFundo.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hits.html">Hits!</a>
+                    </li>
+                    <li class="carrinhoIcon nav-item position-relative">
+
+                        <!--foi pro js-->
+
+                        
+                    </li>
+                </ul>
+
+                <a class="nav-link ms-auto" href="sua conta.html">Sua conta</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content m-3">
+
+    </div>
+        
+        <div class="sobre" id="sobre">
+            <h1>Nossa localização</h1>
+            <iframe class="mapa" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.95782626391!2d-47.45617430000001!3d-23.4980285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58aa3879a554d%3A0x51be799f88c88f8d!2sR.%20da%20Penha%2C%20153%20-%20Centro%2C%20Sorocaba%20-%20SP%2C%2018010-000!5e0!3m2!1spt-BR!2sbr!4v1760401070904!5m2!1spt-BR!2sbr"
+                class="mt-5"
+                width="90%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+</div>
+
+<footer class="footer" id="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>Minha Empresa</h3>
+      <p>Inovando com tecnologia e inteligência.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Links úteis</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#vendas">Serviços</a></li>
+        <li><a href="#footer">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <p>📍 R. da Penha, 153 - Sorocaba/SP</p>
+      <p>📞 (15) 99999-9999</p>
+      <p>✉️ contato@empresa.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 AVIV! Brand — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+
+
+
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./js/hits.js"></script>
 </body>
+
 </html>
