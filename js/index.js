@@ -23,12 +23,12 @@ const produtos = [
   { id: 2, nome: "Sapato Social", preco: 85.8, imagem: "./assets/whatsapp-image-2023-10-09-at-110805-8.jpeg", descricao: "Sapato Social", nicho: "Sapato" },
   { id: 3, nome: "Calça Afaiataria", preco: 85.8, imagem: "./assets/Calca-Social-Alfaiataria-Extra-Grande-Remo-Fenut-2.webp", descricao: "Calça Social", nicho: "Calça" },
   { id: 4, nome: "Social Slim", preco: 85.8, imagem: "./assets/camisa-masculina-social-slim-manga-comprida-branco-xadrez-66fed8ca79095.jpg", descricao: "Camisa Social", nicho: "Camisa" },
-  { id: 5, nome: "Social Slim", preco: 85.8, imagem: "./assets/Camisa-Social-Slim-Algodao-Misto-VERMELHO-003-05915-01.jpg", descricao: "Camisa social vermelha.", nicho: "calça" },
+  { id: 5, nome: "Social Slim", preco: 85.8, imagem: "./assets/Camisa-Social-Slim-Algodao-Misto-VERMELHO-003-05915-01.jpg", descricao: "Camisa social vermelha.", nicho: "Camisa" },
   { id: 6, nome: "Sapato Social", preco: 85.8, imagem: "./assets/images (1).jpg", descricao: "Pretinho basico", nicho: "Sapato" },
   { id: 7, nome: "Kit Social", preco: 85.8, imagem: "./assets/produto-60-659172ab51ac8.webp", descricao: "Look babado", nicho: "Camisa" },
-  { id: 8, nome: "Camisa Social", preco: 85.8, imagem: "./assets/whatsapp-image-2023-03-06-at-20-34-54-dozhey.webp", descricao: "Pretinho basico", nicho: "Sapato" },
+  { id: 8, nome: "Camisa Social", preco: 85.8, imagem: "./assets/whatsapp-image-2023-03-06-at-20-34-54-dozhey.webp", descricao: "Ideal para eventos esportivos", nicho: "Camisa" },
   { id: 9, nome: "Escapulário", preco: 85.8, imagem: "./assets/escapu-800.webp", descricao: "Jóia irada!!!", nicho: "Jóias" },
-  { id: 10, nome: "Anel Boyzão", preco: 85.8, imagem: "./assets/614b4884362e9151e5e4a4b5_189142-conheca-as-principais-caracteristicas-das-joias-de-ouro-amarelo.jpeg", descricao: "Anel", nicho: "Jóias" },
+  { id: 10, nome: "Anel Boyzão", preco: 85.8, imagem: "./assets/614b4884362e9151e5e4a4b5_189142-conheca-as-principais-caracteristicas-das-joias-de-ouro-amarelo.jpeg", descricao: "Anel básico", nicho: "Jóias" },
 
 
 ];
