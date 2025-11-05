@@ -68,6 +68,8 @@ function renderizarCarrinho() {
 
   // calcula subtotal
   const subtotal = carrinho.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  const frete = subtotal > 299 ? 0 : 20;
+
 
   // atualiza resumo
   resumo.innerHTML = `
@@ -81,12 +83,12 @@ function renderizarCarrinho() {
         </p>
         <p class="d-flex justify-content-between">
           <span>Frete</span>
-          <span>R$ 20,00</span>
+          <span>R$ ${frete.toFixed(2)}</span>
         </p>
         <hr>
         <h5 class="d-flex justify-content-between">
           <span>Total</span>
-          <span class="text-success">R$ ${(subtotal + 20).toFixed(2)}</span>
+          <span class="text-success">R$ ${(subtotal + frete).toFixed(2)}</span>
         </h5>
         <a class="compra btn btn-success w-100 mt-3" href="./sucesso.html">Finalizar Compra</a>
       </div>
