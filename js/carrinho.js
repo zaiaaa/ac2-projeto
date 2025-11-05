@@ -6,6 +6,18 @@ const resumo = document.getElementsByClassName("resumo")[0];
 let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
 function renderizarCarrinho() {
+  if (carrinho.length === 0) {
+    div.innerHTML = `
+      <div class="d-flex justify-content-center align-items-center text-center" style="height: 50vh; width: 100%;">
+        <h1 class="text-center text-muted">Não há itens disponíveis no carrinho.</h1>
+      </div>
+
+    `;
+    resumo.innerHTML = ""; // limpa resumo se vazio
+    return;
+  }
+
+  
   div.innerHTML = "";
 
   // renderiza os cards
